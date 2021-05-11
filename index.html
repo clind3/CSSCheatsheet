@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Cheatsheet</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+           <h1>CSS Snippet Cheatsheet</h1> 
+           <p id="initial-text">Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it will automatically select all of the code for you to copy.</p>
+        </header>
+        
+        <main class="top-main-content">
+            <section class="content-box">
+                <h2 class="title">Flexbox Row</h2>
+                <div class="description">
+                    <p>Use these three properties to create a Flexbox row layout.</p>
+                    <div class="snippet">
+                        <p><span>.row {</span><span>display: flex;</span><span>flex-direction: row;</span><span>flex-wrap: wrap;</span>
+                        }
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="content-box">
+                <h2 class="title">Flexbox Column</h2>
+                <div class="description">
+                    <p>Use this to create a flexbox column layout.</p>
+                    <div class="snippet">
+                        <p><span>.column {</span>
+                            <span>display: flex;</span>
+                            <span>flex-direction: column</span>
+                          }</p>
+                    </div>
+                </div>
+            </section>
+            <section class="content-box">
+                <h2 class="title">CSS Grid Layout</h2>
+                <div class="description">
+                    <p>Build a 12-column layout using CSS grid.</p>
+                    <div class="snippet">
+                        <p><span>.grid {</span>
+                            <span>display: grid;</span>
+                            <span>width: 100%;</span>
+                            <span id="end">grid-template-columns: repeat(12, 1fr);</span>
+                          }</p>
+                    </div>
+                </div>
+            </section>
+            <section class="content-box">
+                <h2 class="title">Linear Gradients</h2>
+                <div class="description">
+                    <p>Use these three properties to create a Flexbox row layout.</p>
+                    <div class="snippet">
+                        <p><span>.linear-gradient-background {</span>
+                            <span>background-image: linear-gradient(</span>
+                            <span>rgba(232, 102, 236, 0.3) 0%,</span>
+                            <span>rgba(232, 102, 236, 0.6) 100%);</span>
+                            <span id="end">);</span>
+                        }</p>
+                    </div>
+                </div>
+            </section>
+            <section class="content-box">
+                <h2 class="title">Box Transition Glow</h2>
+                <div class="description">
+                    <p>Use these three properties to create a Flexbox row layout.</p>
+                    <div class="snippet">
+                        <p><span>.code-card .card-header {</span>
+                            <span>border-radius: 8px;</span>
+                            <span id="end">transition: all 0.5s ease-in-out;</span>
+                          <span id="lineBreak">}</span>
+                          
+                          <span id="end">.code-card:hover,</span>
+                          <span>.code-card:hover .card-header {</span>
+                          <span id=end>box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);</span>
+                          }
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="content-box">
+                <h2 class="title">Flexbox Column</h2>
+                <div class="description">
+                    <p>Use this to create a flexbox column layout.</p>
+                    <div class="snippet">
+                        <p><span>.column {</span>
+                            <span>display: flex;</span>
+                            <span>flex-direction: column</span>
+                          }</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

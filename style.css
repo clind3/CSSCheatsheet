@@ -1,0 +1,131 @@
+:root{
+    --purple: rgb(216, 66, 216);
+    --white: white;
+    --darkgray: rgb(53, 58, 78);
+
+}
+
+body{
+    color: var(--purple);
+    padding: 20px;
+    line-height: 1.5em;
+    text-align:center;
+    background-color: var(--darkgray);
+    font-family:'Franklin Gothic Medium';
+}
+
+/* HEADER STYLING */
+header{
+    text-align: center;
+    vertical-align: center;
+}
+
+h1{
+    font-size: 40px;
+    font-weight:1000px;
+}
+
+header p{
+    /* Why after creating max-width does the container not stay center */
+    /* max-width: 550px; */
+    text-align:center;
+    font-size: 15px;
+    margin: 16px 50px;
+    
+}
+
+/* MAIN CONTENT STYLING START */
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-box{
+    width: 30%;
+    /* When adding the code below the elements become centered columns */
+    /* but the spacing becomes wonky */
+    display: flex;
+    flex-direction: column;
+    /* justify-content:center;
+    align-items: center; */
+    margin-bottom: 10px;
+}
+
+.title {
+    min-width: 200px;
+    max-width: 200px;
+    background-color: var(--darkgray);
+    border: solid var(--white) 2px;
+    padding: 5px;
+    color: var(--purple);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: auto;
+    opacity: 1;
+    z-index: 1;
+    border-radius: 5px;
+    font-weight: 300px;
+}
+
+.description {
+    border: dashed 2px var(--white);
+    padding: 15px;
+    margin:auto;
+    
+}
+
+.snippet {
+    background-color: var(--purple);
+    color: var(--white);
+    background-image: linear-gradient(rgb(77, 4, 77),var(--purple));
+    border-radius: 5px;
+    text-align: left;
+    padding: 2px;
+    flex-wrap: wrap;
+}
+
+span::after {
+    content: '\a        ' ;
+    white-space: pre;
+
+}
+
+#end::after{
+    content: '\a';
+}
+
+#lineBreak::after{
+    content: '\a\a';
+    white-space:pre;
+}
+
+.content-box:hover .title, .content-box:hover .description{
+    border:solid  rgb(219, 91, 245) 2px;
+    box-shadow: 0 3px 15px rgb(252, 185, 252);
+}
+
+.content-box:hover .snippet{
+    cursor: grab;
+}
+
+.content-box:active .snippet{
+    user-select: all;
+}
+/* MAIN CONTENT STYLING END */
+
+/* HAVE SCREEN UPDATE AS SIZE CHANGES */
+@media screen and (max-width: 850px){
+    .content-box{
+        width: 48%;
+        margin-bottom: 6px;
+        margin-right: 2px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .content-box{
+        width: 100%;
+    }
+}
